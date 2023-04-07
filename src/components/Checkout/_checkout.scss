@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+*{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #333333;
+}
+.checkout{
+	display: flex;
+}
+.checkout {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+ 
+	&__form {
+	  width: 50%;
+	  display: flex;
+	  flex-direction: column;
+ 
+	  &__title {
+		 font-size: 1.5rem;
+		 margin-bottom: 1rem;
+	  }
+ 
+	  &__contact,
+	  &__shipping {
+		 margin-bottom: 2rem;
+ 
+		 label {
+			display: block;
+			margin-bottom: 0.5rem;
+		 }
+ 
+		 input {
+			width: 100%;
+			padding: 0.5rem;
+			border-radius: 0.25rem;
+			border: 1px solid gray;
+			margin-bottom: 1rem;
+		 }
+	  }
+ 
+	  &__submit {
+		 padding: 0.5rem 1rem;
+		 background-color: navy;
+		 color: white;
+		 border: none;
+		 border-radius: 0.25rem;
+		 font-size: 1.2rem;
+		 cursor: pointer;
+	  }
+	}
+ 
+	&__cart {
+	  width: 40%;
+	  background-color: #f2f2f2;
+	  padding: 2rem;
+	  border-radius: 12px;
+ 
+	  &__title {
+		 font-size: 1.5rem;
+		 margin-bottom: 2rem;
+	  }
+ 
+	  &__items {
+		 list-style: none;
+		 margin: 0;
+		 padding: 0;
+ 
+		 li {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 1rem;
+		 }
+	  }
+ 
+	  &__summary {
+		 margin-top: 2rem;
+ 
+		 &__row {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 1rem;
+			font-weight: bold;
+		 }
+ 
+		 &__row--total {
+			font-weight: bold;
+		 }
+	  }
+	}
+ }
+
+
+
+
+ 
