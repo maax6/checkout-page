@@ -53,15 +53,17 @@ export function Checkout({ items }: CheckoutProps) {
          src={item.image}
          alt={item.name}
         />
-        <span className="checkout__cart__item__name">{item.name}</span>
-        <span className="checkout__cart__item__price">
-         <span className="checkout__cart__item__price__old">
-          ${item.price.toFixed(2)}
+        <div className="checkout__cart__item__details">
+         <span className="checkout__cart__item__name">{item.name}</span>
+         <span className="checkout__cart__item__price">
+          <span className="checkout__cart__item__price__old">
+           ${item.price.toFixed(2)}
+          </span>
+          <span className="checkout__cart__item__price__new">
+           ${(item.price * 0.8).toFixed(2)}
+          </span>
          </span>
-         <span className="checkout__cart__item__price__new">
-          ${(item.price * 0.8).toFixed(2)}
-         </span>
-        </span>
+        </div>
        </li>
       ))}
      </ul>
@@ -73,12 +75,12 @@ export function Checkout({ items }: CheckoutProps) {
       <span>Subtotal</span>
       <span>40.00</span>
      </div>
-	  <hr />
+     <hr />
      <div className="checkout__cart__summary__row">
       <span>Shipping</span>
       <span>5.00</span>
      </div>
-	  <hr />
+     <hr />
      <div className="checkout__cart__summary__row checkout__cart__summary__row--total">
       <span>Total</span>
       <span>45.00</span>
