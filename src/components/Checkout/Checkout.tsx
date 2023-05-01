@@ -19,27 +19,27 @@ export function Checkout({ items }: CheckoutProps) {
         <form className="checkout__form">
           <div className="checkout__form__contact">
             <h2 className="checkout__form__title">Contact Information</h2>
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" />
-            <label htmlFor="phone">Phone:</label>
+            <label htmlFor="phone">Phone</label>
             <input type="text" id="phone" name="phone" />
           </div>
           <div className="checkout__form__shipping">
             <h2 className="checkout__form__title">Shipping Address</h2>
             <label htmlFor="fullname">Full Name:</label>
             <input type="text" id="fullname" name="fullname" />
-            <label htmlFor="address">Address:</label>
+            <label htmlFor="address">Address</label>
             <input
               placeholder="Type your adress here"
               type="text"
               id="address"
               name="address"
             />
-            <label htmlFor="city">City:</label>
+            <label htmlFor="city">City</label>
             <input type="text" id="city" name="city" />
-            <label htmlFor="country">Country:</label>
+            <label htmlFor="country">Country</label>
             <input type="text" id="country" name="country" />
-            <label htmlFor="postalcode">Postal Code:</label>
+            <label htmlFor="postalcode">Postal Code</label>
             <input type="text" id="postalcode" name="postalcode" />
           </div>
           <button className="checkout__form__submit">Continue</button>
