@@ -87,11 +87,11 @@ export function Checkout({ items }: CheckoutProps) {
                     <span className="checkout__cart__item__name">
                       {item.name}
                     </span>
-                    <div className="checkout__cart__item__price">
-                      <span className="checkout__cart__item__price__new">
+                    <div className="checkout__cart__item__details__price">
+                      <span className="checkout__cart__item__details__price__new">
                         ${item.price.toFixed(2)}
                       </span>
-                      <span className="checkout__cart__item__price__old">
+                      <span className="checkout__cart__item__details__price__old">
                         ${item.oldPrice.toFixed(2)}
                       </span>
                     </div>
