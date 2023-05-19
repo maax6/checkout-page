@@ -59,37 +59,94 @@ export function Checkout({ items }: CheckoutProps) {
             <form className="checkout__form">
                <div className="checkout__form__contact">
                   <h2 className="checkout__form__title">Contact Information</h2>
-                  <label htmlFor="email">Email</label>
-                  <input
-                     placeholder="Enter your email..."
-                     type="email"
-                     id="email"
-                     name="email"
-                  />
+                  <div className="input-group">
+                     <label htmlFor="email">Email</label>
+                     <div className="input-field-group">
+                        <MdEmail className="input-icon" />
+                        <input
+                           className="input-field"
+                           placeholder="Enter your email..."
+                           type="email"
+                           id="email"
+                           name="email"
+                        />
+                     </div>
+                  </div>
                   <label htmlFor="phone">Phone</label>
-                  <input placeholder="Enter your phone..." type="text" id="phone" name="phone" />
+                  <div className="input-field-group">
+                     <MdEmail className="input-icon" />
+                     <input
+                        className="input-field"
+                        placeholder="Enter your phone..."
+                        type="text"
+                        id="phone"
+                        name="phone"
+                     />
+                  </div>
                </div>
                <div className="checkout__form__shipping">
                   <h2 className="checkout__form__title">Shipping Address</h2>
-                  <label placeholder='Your Name...' htmlFor="fullname">Full Name:</label>
-                  <input placeholder='Your Name..' type="text" id="fullname" name="fullname" />
+                  <label placeholder="Your Name..." htmlFor="fullname">
+                     Full Name:
+                  </label>
+                  <div className="input-field-group">
+                     <MdEmail className="input-icon" />
+                     <input
+                        className="input-field"
+                        placeholder="Your Name.."
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                     />
+                  </div>
                   <label htmlFor="address">Address</label>
-                  <input
-                     placeholder="Your adress.."
-                     type="text"
-                     id="address"
-                     name="address"
-                  />
+                  <div className="input-field-group">
+                     <MdEmail className="input-icon" />
+                     <input
+                        className="input-field"
+                        placeholder="Your adress.."
+                        type="text"
+                        id="address"
+                        name="address"
+                     />
+                  </div>
                   <label htmlFor="city">City</label>
-                  <input type="text" id="city" name="city" />
+                  <div className="input-field-group">
+                     <MdEmail className="input-icon" />
+                     <input
+                        className="input-field"
+                        placeholder="Your city.."
+                        type="text"
+                        id="city"
+                        name="city"
+                     />
+                  </div>
                   <div className="checkout__form__row">
                      <div className="checkout__form__column">
                         <label htmlFor="country">Country</label>
-                        <input type="text" id="country" name="country" />
+                        <div className="input-field-group">
+                           <MdEmail className="input-icon" />
+                           <input
+                              className="input-field"
+                              placeholder="your country.."
+                              type="text"
+                              id="country"
+                              name="country"
+                           />
+                        </div>
                      </div>
                      <div className="checkout__form__column">
                         <label htmlFor="postalcode">Postal Code</label>
-                        <input type="text" id="postalcode" name="postalcode" />
+                        <div className="input-field-group">
+                           <MdEmail className="input-icon" />
+                           <input
+                              className="input-field"
+                              placeholder="Your postal code.."
+                              type="text"
+                              id="postalcode"
+                              name="postalcode"
+                           />
+                        </div>
                      </div>
                   </div>
                </div>
