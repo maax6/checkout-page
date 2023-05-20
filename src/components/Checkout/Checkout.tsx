@@ -3,9 +3,12 @@ import { useState } from 'react';
 import {
    MdEmail,
    MdPhone,
-   MdLocationOn,
-   MdLocalShipping,
+   MdLocationCity,
+   MdMarkunreadMailbox,
 } from 'react-icons/md';
+import { IoMdContact } from 'react-icons/io';
+import { HiHome } from 'react-icons/hi';
+import { RiEarthFill } from 'react-icons/ri';
 interface Item {
    id: number;
    name: string;
@@ -74,7 +77,7 @@ export function Checkout({ items }: CheckoutProps) {
                   </div>
                   <label htmlFor="phone">Phone</label>
                   <div className="input-field-group">
-                     <MdEmail className="input-icon" />
+                     <MdPhone className="input-icon" />
                      <input
                         className="input-field"
                         placeholder="Enter your phone..."
@@ -90,7 +93,7 @@ export function Checkout({ items }: CheckoutProps) {
                      Full Name:
                   </label>
                   <div className="input-field-group">
-                     <MdEmail className="input-icon" />
+                     <IoMdContact className="input-icon" />
                      <input
                         className="input-field"
                         placeholder="Your Name.."
@@ -101,7 +104,7 @@ export function Checkout({ items }: CheckoutProps) {
                   </div>
                   <label htmlFor="address">Address</label>
                   <div className="input-field-group">
-                     <MdEmail className="input-icon" />
+                     <HiHome className="input-icon" />
                      <input
                         className="input-field"
                         placeholder="Your adress.."
@@ -112,7 +115,7 @@ export function Checkout({ items }: CheckoutProps) {
                   </div>
                   <label htmlFor="city">City</label>
                   <div className="input-field-group">
-                     <MdEmail className="input-icon" />
+                     <MdLocationCity className="input-icon" />
                      <input
                         className="input-field"
                         placeholder="Your city.."
@@ -125,7 +128,7 @@ export function Checkout({ items }: CheckoutProps) {
                      <div className="checkout__form__column">
                         <label htmlFor="country">Country</label>
                         <div className="input-field-group">
-                           <MdEmail className="input-icon" />
+                           <RiEarthFill className="input-icon" />
                            <input
                               className="input-field"
                               placeholder="your country.."
@@ -138,7 +141,7 @@ export function Checkout({ items }: CheckoutProps) {
                      <div className="checkout__form__column">
                         <label htmlFor="postalcode">Postal Code</label>
                         <div className="input-field-group">
-                           <MdEmail className="input-icon" />
+                           <MdMarkunreadMailbox className="input-icon" />
                            <input
                               className="input-field"
                               placeholder="Your postal code.."
@@ -149,6 +152,16 @@ export function Checkout({ items }: CheckoutProps) {
                         </div>
                      </div>
                   </div>
+                     <div id="personnalInfos">
+                        <input
+                           type="checkbox"
+                           id="saveInfos"
+                           name="saveInfos"
+                        />
+                        <label htmlFor="saveInfos">
+                           Save this information for next time
+                        </label>
+                     </div>
                </div>
                <button className="checkout__form__submit">Continue</button>
             </form>

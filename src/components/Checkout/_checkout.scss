@@ -39,7 +39,7 @@ h1 {
       .input-field-group {
          position: relative;
          display: flex;
-         align-items: center;
+         align-items: flex-start
       }
 
       .input-icon {
@@ -113,6 +113,7 @@ h1 {
          cursor: pointer;
          align-self: flex-end;
       }
+
    }
    &__cart {
       display: flex;
@@ -234,3 +235,8 @@ h1 {
       }
    }
 }
+#personnalInfos{
+	display: flex;
+	column-gap: 3px;
+	// flex-direction: column;
+  }
