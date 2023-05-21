@@ -21,7 +21,8 @@
     </a>
   </h3>
 </div>
-## Overview
+
+### Overview
 
 ![screenshot](https://github.com/maax6/checkout-page/blob/master/public/screeshotsDemo/macbookairScreenshot.png?raw=true)
 ![screenshot](https://github.com/maax6/checkout-page/blob/master/public/screeshotsDemo/iphonescreenshot.png?raw=true)
