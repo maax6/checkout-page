@@ -386,14 +386,14 @@ export function Checkout({ items }: CheckoutProps) {
                               id="country"
                               name="country"
                            >
-                              {countries.map((country, index) => (
-                                 <>
                                     <option
                                        selected={true}
                                        disabled={true}
                                     >
                                        Your country..
                                     </option>
+                              {countries.map((country, index) => (
+                                 <>
                                     <option value={country} key={index}>
                                        {country}
                                     </option>
