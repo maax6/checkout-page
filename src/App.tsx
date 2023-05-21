@@ -8,7 +8,7 @@ const items = [
     price: 54.99,
     oldPrice: 94.99,
     quantity: 1,
-    image: 'src/assets/img/photo1.png',
+    image: 'src/assets/photo1.png',
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const items = [
     price: 74.99,
     oldPrice: 124.99,
     quantity: 1,
-    image: 'src/assets/img/photo2.png',
+    image: 'src/assets/photo2.png',
   },
 ];
 
