@@ -1,6 +1,5 @@
 import './_checkout.scss';
 import { useState } from 'react';
-
 import {
    MdEmail,
    MdPhone,
@@ -496,3 +495,4 @@ export function Checkout({ items }: CheckoutProps) {
       </div>
    );
 }
+export default Checkout;
