@@ -41,7 +41,7 @@
 - [React.js](https://fr.legacy.reactjs.org/)
 - [Prettier](https://prettier.io/)
 - [TypeScript](https://www.typescriptlang.org)
-
+- [Vite](https://vitejs.dev/)
 
 ## Features
 
