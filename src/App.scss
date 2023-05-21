@@ -1,4 +1,15 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+footer {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+   height: 17px;
+   font-family: 'Montserrat';
+   font-size: 14px;
+   text-align: center;
+   color: #a9a9a9;
 }

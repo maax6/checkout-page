@@ -24,6 +24,7 @@ function App() {
   return (
     <>
       <Checkout items={items} />
+	  <footer> created by ⌘ Maxime - devChallenges.io</footer>
     </>
   );
 }
